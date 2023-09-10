@@ -87,6 +87,58 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*************** GENERAL STYLES ****************/
+
+   html {
+    font-size: 1rem;
+   }
+
+   body {
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 1em;
+    text-align: left;
+   }
+
+   ul, 
+   ol {
+    list-style-type: none;
+    font-size: 1.125em;
+    font-weight: bold;
+   } 
+
+   a {
+    text-decoration: none;
+    color: #e2e3ed;
+   }
+   
+   h2,
+   h3,
+   h4 {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+   }
+
+   h2 {
+    font-size: 1.875em;
+   }
+
+   h3,
+   h4 {
+    font-size: 1.125em;
+   }
+
+   p {
+    font-size: 0.875em;
+    line-height: 1.125em;
+   }
+
+   address {
+    font-style: normal;
+   }
+
+
+
+
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -124,6 +176,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 footer {
@@ -142,7 +195,7 @@ footer .content-wrapper{
 }
 
 footer .contact{
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 footer .social {
@@ -164,18 +217,21 @@ footer .copyright{
 /***************** HOMEPAGE *****************/
 
 /* Hero Area */
+
 .hero-area{
   display: flex;
   justify-content: center;
 }
 
 /* Aside - Newsletter */
+
 aside{
   display: flex;
   justify-content: center;
 }
 
 /* Features */
+
 .features{
   display: flex;
   justify-content: center;
@@ -205,6 +261,7 @@ aside{
 
 
 /* Reviews */
+
 .reviews{
   display: flex;
   justify-content: center;
@@ -219,6 +276,7 @@ aside{
 }
 
 /**************** ABOUT PAGE ****************/
+
 .mission{
   display: flex;
   justify-content: center;
@@ -234,6 +292,7 @@ aside{
 }
 
 /***************** FAQ PAGE *****************/
+
 .faq{
   display: flex;
   justify-content: center;
@@ -353,12 +412,14 @@ aside{
 @media only screen and (min-width: 768px){
 
   /** GENERAL STYLES **/
+
   .content-wrapper{
     max-width: 640px;
     margin: 100px 0;
   }
 
   /** HEADER **/
+
   header{ 
     padding: 33px 0;
   }
@@ -396,6 +457,7 @@ aside{
   }
   
   /* FEATURES */
+
   .features article{
     display: flex;
     align-items: center;
@@ -414,6 +476,7 @@ aside{
 
 
   /** FOOTER **/
+
   footer .content-wrapper{
     width: 65%;
   }
@@ -428,14 +491,19 @@ aside{
     margin-bottom: 0;
   }
 
+  footer .copyright{
+    width: 100%;
+  }
 
   /******** ABOUT *********/
 
   /* MISSION SECTION */
+
   .mission-content{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 20px;
   }
 
   .mission-content p{
@@ -443,6 +511,7 @@ aside{
   }
 
   /* CONTACT SECTION */
+
   .contact-section .content-wrapper h2{
     width: 80%;
   }
@@ -455,6 +524,7 @@ aside{
 
 
   /********* FAQ **********/
+
   .faq .content-wrapper{
     justify-content: space-between;
   }
@@ -475,7 +545,7 @@ aside{
   }
 
   header{
-    padding: 15px;
+    padding: 15px 0;
   }
 
   .hero-area h1{
